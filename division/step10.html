@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenido Estudiante</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+</head>
+<body>
+
+    <!-- partial:index.partial.html -->
+    <a href="step9.html" class="btn btn-six left">Anterior</a>
+    <a href="step11.html" class="btn btn-six right">Siguiente</a>
+    <a href="menu.html" class="menu"><img src="assets/menu.png" width="24px"></a>
+
+   <style type="text/css">
+        .menu{
+            display: block;
+            position: fixed;
+            margin: 20px 20px;
+            background-color: YELLOW;
+            border-radius: 100%;
+            padding: 15px;
+            z-index: 9999;
+        }
+    </style>
+
+    <div class="row">
+        <div class="col-lg-12 text-center" style="background-color: #0040FF;">
+            <h1 style="color:YELLOW; font-weight:bold; font-size: 40px; ">
+                EJERCICIO No 1 MATEDIVERTIDO
+            </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 text-center">
+            
+        </div>
+        <div class="col-lg-8 texto">
+            
+            <p>
+                1. Leo el problema para comprenderlo.<br><br>
+                Rosa tiene 300 zanahorias y quiere guardarlas en cajas, colocando 7 zanahorias en cada una. 
+                ¿Cuántas cajas necesitará? ¿Cuántas zanahorias le sobrarán?<br><br>
+                2. Extrae los datos del problema<br>
+                <ul>
+                    <li>Rosa tiene 300 zanahorias</li>
+                    <li>Coloca 7 zanahorias en cada caja</li>
+
+                </ul><br>
+                3. Pongo en práctica el plan para resolver el problema.<br><br>
+                <center><img src="images/image26.png"/></center><br>
+                4. <strong>Escribo la solución:</strong> le sobran 6 zanahorias a Rosa
+
+            </p>
+
+        </div>
+        <div class="col-lg-2 text-center">
+            
+        </div>
+    </div>
+</body>
+<!-- scripts -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+<style>
+    body{
+        background-image: url('../assets/fon.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .btn {
+        position: relative;
+        color: #0040FF;
+        text-transform: uppercase;
+        font-weight: bold;
+        width: 100%;
+        height: 100%;
+        line-height: 114px;
+        transition: all 0.3s;
+        background-color:yellow;
+        span {
+            transition: all 0.3s;
+            tranform: scale(1, 1);
+        }
+    }
+    .btn::before, .btn::after {
+        content: '';
+        position: absolute;
+        transition: all 0.3s;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    /* BTN SIX */
+    .btn-six::before {
+        opacity: 0;
+        background: rgba(255, 255, 255, 0.1);
+        transform: scale(1.3, 1.3);
+    }
+    .btn-six:hover::before {
+        opacity: 1;
+        transform: scale(1, 1);
+        color: white!important;
+    }
+    .btn-six::after {
+        transition: all 0.3s;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    .btn-six:hover::after {
+        transform: scale(0, 0);
+        opacity: 0;
+    }
+    .left{
+        left: 0px;
+        margin-top: 20%;
+        position: fixed;
+        height: 130px;
+        width: 150px;
+        border-radius: 0px 80px 80px 0px;
+    }
+    .right{
+        right:0px;
+        margin-top: 20%;
+        position: fixed;
+        height: 130px;
+        width: 150px;
+        border-radius: 80px 0px 0px 80px;
+    }
+    .texto{
+        background-color: white;
+        border-radius: 40px;
+        padding: 1em;
+        font-size: 25px;
+        margin-top: 1em;
+    }
+
+</style>
+
+</html>
